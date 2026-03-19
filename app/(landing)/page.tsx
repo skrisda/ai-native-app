@@ -1,9 +1,13 @@
-export default function HomePage() {
-  const name = "World"
+import Footer from "@/app/(landing)/Footer";
+import Navbar from "@/app/(landing)/Navbar";
+import Hero from "@/app/(landing)/Hero";
 
+export default function HomePage() {
   return (
     <>
-      <h1 className="text-3xl text-amber-600 animate-bounce">Hello, {name}!</h1>
+      <Navbar />
+      <Hero />
+      <Footer />
     </>
   )
 }
